@@ -1,0 +1,250 @@
+/*=================
+PC、スマホ共通スタイル
+===================*/
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:"Noto Sans Japanese",sans-serif;
+}
+
+.index-h2 {
+    margin: 0px;
+    padding: 60px 0px 40px;
+}
+
+/* ヘッダー */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: auto;
+
+}
+
+/* home */
+#home {
+    font-size: 34px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    padding: 0px 20px;
+    border: solid 1px #000000;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+#nav-pc ul {
+    display: flex;
+    padding-right: 0;
+}
+
+#nav-pc li {
+    list-style: none;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+}
+
+#nav-pc a:hover {
+    text-decoration: underline;
+}
+
+/* メインビジュアル */
+#main-visual > img {
+    width: 100%;
+    margin: 0;
+
+}
+/* 見出し */
+h2 {
+    font-size: 34px;
+    text-align: center;
+}
+  
+/* About */
+#about {
+    margin: 100px auto 100px auto;
+}
+
+.about-inner {
+    margin: 20px 0px;
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+#about-flex {
+    display: flex; 
+}
+
+#about-flex > div {
+    margin: 0px auto;
+}
+
+#about-photo {
+    border-radius: 432px 432px 432px 432px;
+    text-align: right;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Works */
+#works {
+    margin: 20px auto 20px auto;
+}
+
+/* セクション内の外枠 */
+#works > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#works-flex {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+ /* 3つの写真＋説明の枠 */
+.flex-box > img {
+    width: 100%;
+    position: relative;
+}
+
+.flex-box {
+    margin-left: 10px;
+    margin-right: 10px;
+     width: calc(100% / 3);
+}
+
+.works-inner {
+    padding: 0px 30px;
+}
+
+/* フッター */
+footer {
+    color: black;
+    text-align: center;
+}
+
+#footer-link > a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+#footer-link > a:hover {
+    text-decoration: underline;
+}
+
+/*====================
+スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px) { 
+
+.index-h2 {
+    margin: 0px;
+    padding: 30px 0px 20px;
+}
+
+/* ヘッダー */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#nav-pc ul {
+    display: flex;
+    padding-left: 0;
+}
+
+#nav-pc li {
+    list-style: none;
+}
+
+#nav-pc a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #0d0d0d;
+}
+    
+/* ロゴ */
+#home {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    padding: 0px 20px;
+    border: solid 1px #000000;
+}
+
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    height: 150px;
+}
+
+#main-visual > img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    height: 200px;
+}
+
+
+/* About */
+#about-flex {
+    flex-direction: column;
+    padding: 0;
+}
+
+.about-inner {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/* Works */
+#works-flex {
+    flex-direction: column;
+    padding: 0;
+}
+
+.flex-box {
+    width: 100%;
+    margin: 0;
+}
+
+.works-inner {
+    padding: 0px 10px;
+}
+
+}
